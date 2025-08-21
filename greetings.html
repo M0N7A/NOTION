@@ -17,22 +17,22 @@
 
         .widget {
             padding: 5px 5px ;
-            color: #e4d5b7;
+            color: #54382a;
             display: flex;
             justify-content:center;
             align-items:center;
             flex-direction: column;
             max-width: 95%;
             margin: auto;
-            border: 3px solid #593609;
+            border: 3px solid #54382a;
             border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #593609;
+            box-shadow: 2px 2px 1px 0px #54382a;
 
         }
 
            
         .greet{
-            font-size: 2.5em;
+            font-size: 3em;
         }
 
         .date {
@@ -95,7 +95,7 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name=""
+        name="Mrs.Benedict"
         if (hrs < 12)
             greet = 'Good Morning  '+name;
         else if (hrs >= 12 && hrs <= 17)
@@ -124,7 +124,7 @@ function dispalyGreetings(today){
 
     function dispalyClock(today) {
 
-        var hour = padZeros(twelveHour(today.getHours()));
+        var hour = padZeros(twentyfourHour(today.getHours()));
         var minutes = padZeros(today.getMinutes());
         var seconds = padZeros(today.getSeconds());
        
